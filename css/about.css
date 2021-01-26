@@ -1,0 +1,213 @@
+/* import fonts from google fonts*/
+@import url("https://fonts.googleapis.com/css?family=Anton|Cormorant+Garamond|Gugi|Pacifico|Viaoda+Libre&display=swap");
+
+:root {
+  --light-gray: #197aa0a1;
+  --primary-color: #45ccb8;
+  --border: #2b303218;
+  --text-color: #ff686b;
+  --gugi: "gugi", cursive;
+  --anton: "Anton", sans-serif;
+  --pacifico: "Pacifico", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo {
+  float: left;
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.logo h3 {
+  color: var(--text-color);
+  font-family: var(--anton);
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  margin-top: 15px;
+  float: right;
+  font-family: var(--anton);
+  margin-right: 20px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+  border-radius: 10px;
+}
+
+ul li a:hover {
+  background-color: var(--text-color);
+  color: black;
+}
+
+ul li.active a {
+  background-color: var(--text-color);
+  color: black;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/about-banner.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.page-title {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.page-title h1 {
+  color: var(--text-color);
+  font-size: 55px;
+  font-weight: 350;
+  font-family: var(--anton);
+}
+
+.page-title p {
+  color: var(--primary-color);
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.who-am-i {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fddcc356;
+}
+
+.container3 {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  width: 50%;
+  height: 600px;
+  background: url(../assets/who-i-am.jpg) no-repeat center / cover;
+  border-radius: 8px;
+}
+
+.right {
+  width: 50%;
+  min-height: 400px;
+  background-color: #2f3d3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  margin-left: -150px;
+}
+
+.right h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  color: var(--text-color);
+  font-family: var(--anton);
+}
+
+.right p {
+  margin: 20px 0;
+  font-weight: 500;
+  line-height: 25px;
+  color: #fafafa;
+}
+
+@media only screen and (max-width: 768px) {
+  .container3 {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 80%;
+    margin: 0;
+    margin-top: -100px;
+  }
+}
+
+.personal-details {
+  height: 80vh;
+}
+
+.bottomContainers {
+  position: absolute;
+  margin-left: 0%;
+
+  display: inline-box;
+}
+
+.container {
+  max-width: 30%;
+  max-height: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  background-color: #fddcc356;
+  color: var(--text-color);
+  display: inline-block;
+  /*display: inline-block;*/
+  border-radius: 5px;
+  border-bottom: 2px solid grey;
+}
+
+.divider {
+  width: 160px;
+  height: 5px;
+  background: var(--primary-color);
+  margin: 26px auto;
+}
+
+.content h2 {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.content p {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.container2 {
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fddcc356;
+}

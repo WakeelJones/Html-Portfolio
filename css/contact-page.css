@@ -1,0 +1,119 @@
+/* import fonts from google fonts*/
+@import url("https://fonts.googleapis.com/css?family=Anton|Cormorant+Garamond|Gugi|Pacifico|Viaoda+Libre&display=swap");
+
+:root {
+  --light-gray: #197aa0a1;
+  --primary-color: #45ccb8;
+  --border: #2b303218;
+  --text-color: #ff686b;
+  --gugi: "gugi", cursive;
+  --anton: "Anton", sans-serif;
+  --pacifico: "Pacifico", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+    background-color: #fddcc356;
+}
+
+/* Landing-Section */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/portfolio-background.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  float: left;
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.logo h3{
+    color: var(--text-color);
+    font-family: var(--anton);
+    font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  margin-top: 15px;
+  float: right;
+  font-family: var(--anton);
+  margin-right: 20px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+  border-radius: 10px;
+}
+
+ul li a:hover {
+  background-color: var(--text-color);
+  color: black;
+}
+
+ul li.active a {
+  background-color: var(--text-color);
+  color: black;
+}
+
+
+.contact-form{
+    display: flexbox;
+    text-align: center;
+}
+.banner-text{
+    text-align: center;
+    font-family: var(--anton);
+    color: var(--text-color);
+    font-size: 55px;
+    margin-top: 55px;
+}
+.form{
+    font-family: var(--anton);
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+.block{
+    border-radius: 8px;
+    width: 35%;
+    height: 30px;
+    border: 1px solid var(--text-color);
+    position: relative;
+    text-align: center;
+}
+
+.btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--text-color);
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.btn:hover{
+  background-color: whitesmoke;
+  color: black;
+  text-decoration: black;
+}

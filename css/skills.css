@@ -1,0 +1,100 @@
+/* import fonts from google fonts*/
+@import url("https://fonts.googleapis.com/css?family=Anton|Cormorant+Garamond|Gugi|Pacifico|Viaoda+Libre&display=swap");
+
+:root {
+  --light-gray: #197aa0a1;
+  --primary-color: #45ccb8;
+  --border: #2b303218;
+  --text-color: #ff686b;
+  --gugi: "gugi", cursive;
+  --anton: "Anton", sans-serif;
+  --pacifico: "Pacifico", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  background-color: #fddcc356;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/skills-banner.jpeg);
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  float: left;
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.logo h3 {
+  color: var(--text-color);
+  font-family: var(--anton);
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  margin-top: 15px;
+  float: right;
+  font-family: var(--anton);
+  margin-right: 20px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+  border-radius: 10px;
+}
+
+ul li a:hover {
+  background-color: var(--text-color);
+  color: black;
+}
+
+ul li.active a {
+  background-color: var(--text-color);
+  color: black;
+}
+
+.banner-text {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 55px;
+  font-weight: 600;
+  font-family: var(--anton);
+}
+
+.tech {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  flex-wrap: wrap;
+  margin-top: -10px;
+  height: 80vh;
+  align-items: center;
+  margin-left: 145px;
+}
+
+.tech img{
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    border-radius: 25px;
+}
