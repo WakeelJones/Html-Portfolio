@@ -203,6 +203,21 @@ header {
   color: var(--text-color);
 }
 
+.Job1{
+  text-align: center;
+  color: var(--text-color);
+}
+
+.Job2{
+  text-align: center;
+  color: var(--text-color);
+}
+
+.Job3{
+  text-align: center;
+  color: var(--text-color);
+}
+
 .container2 {
   min-height: 70vh;
   width: 100%;
